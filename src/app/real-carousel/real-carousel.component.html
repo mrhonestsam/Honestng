@@ -1,0 +1,12 @@
+  <div class="container" id="container">
+    <div id="carousel">
+        <div *ngFor ="let item of items"><span style="font-size:20px" class="glyphicon glyphicon-chevron-right" >{{item.text}}</span></div>
+    </div>
+  </div>
+  <div class="carouselButtonGroup">
+    <div class=" col-xs-6 col-lg-6" ></div>
+    <div class="col-xs-1 col-lg-1" style="white-space: nowrap;">
+      <span style="font-size:20px" class="glyphicon glyphicon-chevron-right" (click)="rotate()"></span>
+     </div> 
+    <div class="col-xs-1 col-lg-5"></div>
+  </div>  
